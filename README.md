@@ -8,15 +8,14 @@ There is no dark mode on this site as its a legacy website.
 1. Start the dev server. And open http://localhost:3000 in your browser.
 
 ```
-  yarn start
+  pnpm start
 ```
 
 2. Build your product.
 
 ```
-  yarn prod
+  pnpm prod
 ```
-
 
 ## Dependencies
 
