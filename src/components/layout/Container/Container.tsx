@@ -12,14 +12,14 @@ export type ContainerProps = HTMLProps<'div'> & {
 };
 
 const maxWidthClasses: Record<MaxWidthOption, string> = {
-  sm: 'sm:max-w-screen-sm',
-  md: 'md:max-w-screen-md sm:max-w-screen-sm',
-  lg: 'lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm',
-  xl: 'xl:max-w-screen-xl',
-  '2xl': '2xl:max-w-[1366px] xl:max-w-screen-lg',
-  '3xl': '3xl:max-w-screen-2xl 2xl:max-w-[1366px] xl:max-w-screen-xl',
-  '4xl': '4xl:max-w-screen-3xl 3xl:max-w-screen-2xl 2xl:max-w-[1366px] xl:max-w-screen-xl',
-  '5xl': '5xl:max-w-screen-4xl 4xl:max-w-screen-3xl 3xl:max-w-screen-2xl 2xl:max-w-[1366px] xl:max-w-screen-xl',
+  sm: 'sm:max-w-(--breakpoint-sm)',
+  md: 'md:max-w-(--breakpoint-md) sm:max-w-(--breakpoint-sm)',
+  lg: 'lg:max-w-(--breakpoint-lg) md:max-w-(--breakpoint-md) sm:max-w-(--breakpoint-sm)',
+  xl: 'xl:max-w-(--breakpoint-xl)',
+  '2xl': '2xl:max-w-[1366px] xl:max-w-(--breakpoint-lg)',
+  '3xl': '3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
+  '4xl': '4xl:max-w-(--breakpoint-3xl) 3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
+  '5xl': '5xl:max-w-(--breakpoint-4xl) 4xl:max-w-(--breakpoint-3xl) 3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
 };
 
 const Container = ({

@@ -52,7 +52,7 @@ export default function SidebarNav() {
                       onClick={handleLinkClick}
                       href={item.href}
                       className={cn(
-                        `flex-grow px-6 py-6 font-medium  text-[#adadb9] transition-colors hover:bg-primary aria-[current=page]:text-primary text-xl`,
+                        `grow px-6 py-6 font-medium  text-[#adadb9] transition-colors hover:bg-primary aria-[current=page]:text-primary text-xl`,
                       )}
                     >
                       {item.label}
