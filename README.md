@@ -1,4 +1,7 @@
-# Very Fast React Boilerplate
+# Portfolio Site v1
+
+This is a rebuild of static site in ReactJS using ViteJS and Tailwind.
+There is no dark mode on this site as its a legacy website.
 
 ## Getting started
 
@@ -14,6 +17,7 @@
   yarn prod
 ```
 
+
 ## Dependencies
 
 - React
@@ -21,13 +25,3 @@
 - Typescript
 - eslint
 - Prettier
-
-
-### Notes
-
-This repository is unstyled and open to use whatever style engine of preference. For example you can use one of the following:
-
-- Vanilla CSS/SCSS
-- TailwindCSS
-- Styled Components
-- Material UI or Emotion

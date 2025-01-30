@@ -1,17 +1,35 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
+import type React from 'react';
 
-const Layout = () => {
+interface LayoutProps {
+  children: React.ReactNode;
+  emptyPage?: boolean;
+  pageTitle?: string;
+}
+
+const Layout = ({ pageTitle, emptyPage, children }: LayoutProps) => {
+  useEffect(() => {
+    if (import.meta.env.REACT_APP_PROJECT_NAME) {
+      document.title = `${pageTitle} | ${import.meta.env.REACT_APP_PROJECT_NAME}`;
+    } else {
+      document.title = `${pageTitle} | ${import.meta.env.REACT_APP_SLUG}`;
+    }
+  }, [pageTitle]);
+
   return (
-    <div id="site-wrapper">
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <>
+      {emptyPage ? (
+        children
+      ) : (
+        <div id="site-wrapper">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
 
