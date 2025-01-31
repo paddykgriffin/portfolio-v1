@@ -1,6 +1,5 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import 'normalize.css';
 import './styles/global.css';
 
 import { disableReactDevTools } from '@fvilers/disable-react-devtools';
