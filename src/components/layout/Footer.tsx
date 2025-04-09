@@ -5,11 +5,13 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
-      <div>
-        &copy; {year} Copyright - {siteConfig.siteName}
+    <footer className="bg-secondary text-white">
+      <div className="container mx-auto flex items-center justify-between py-4">
+        <div className="">
+          &copy; {year} Copyright - {siteConfig.siteName}
+        </div>
+        <FooterNav />
       </div>
-      <FooterNav />
     </footer>
   );
 };

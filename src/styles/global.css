@@ -143,3 +143,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#site-wrapper {
+  @apply h-dvh
+}
+
+main {
+  @apply h-full
+}
