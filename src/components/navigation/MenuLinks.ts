@@ -6,8 +6,8 @@ export const primaryMenuLinks: Array<NavItem> = [
         href: "/",
       },
       {
-        label: "My Projects",
-        href: "/my-projects",
+        label: "Projects",
+        href: "/projects",
       },
       {
         label: "About",

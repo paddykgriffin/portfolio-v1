@@ -1,41 +1,37 @@
-import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
-import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import * as React from 'react';
+import { Slot } from '@radix-ui/react-slot';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap text-lg font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  'inline-flex items-center justify-center whitespace-nowrap text-lg font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        contained:
-          "bg-primary text-white hover:bg-primary/90 transition duration-500 font-semibold tracking-wide ",
-        destructive:
-          "bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90",
-        outline:
-          "border border-input shadow-xs hover:bg-accent hover:text-accent-foreground border-2",
-
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        icon: "bg-transparent hover:text-black hover:bg-black/50 dark:hover:text-white",
+        contained: 'bg-secondary text-white hover:bg-secondary/50 transition duration-500 font-semibold tracking-wide ',
+        destructive: 'bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90',
+        outline: 'border border-input shadow-xs hover:bg-accent hover:text-accent-foreground border-2',
+        ghost: 'hover:bg-accent hover:text-accent-foreground',
+        link: 'text-primary underline-offset-4 hover:underline',
+        icon: 'bg-secondary rounded-full hover:bg-secondary/40 !h-12 !w-12',
       },
       size: {
-        small: "h-9 px-2",
-        medium: "h-8 rounded-md px-3 text-xs",
-        large: "h-10 px-12 py-7",
-        icon: "h-10 w-10",
+        small: 'h-9 px-2',
+        medium: 'h-8  px-3 text-xs',
+        large: 'h-10 px-12 py-7',
+        icon: 'h-10 w-10',
       },
       fullWidth: {
-        true: "w-full",
+        true: 'w-full',
       },
       disableElevation: {
-        true: "shadow-none",
-        false: "shadow-xs hover:shadow-sm",
+        true: 'shadow-none',
+        false: 'shadow-xs hover:shadow-sm',
       },
     },
     defaultVariants: {
-      variant: "contained",
-      size: "medium",
+      variant: 'contained',
+      size: 'medium',
       disableElevation: false,
     },
   },
@@ -47,28 +43,14 @@ type BaseButtonProps = {
   asChild?: boolean;
 } & ButtonVariantProps;
 
-type ButtonAsButtonProps = BaseButtonProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonAsButtonProps = BaseButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-type ButtonAsAnchorProps = BaseButtonProps &
-  React.AnchorHTMLAttributes<HTMLAnchorElement>;
+type ButtonAsAnchorProps = BaseButtonProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 type ButtonProps = ButtonAsButtonProps | ButtonAsAnchorProps;
 
-const Button = React.forwardRef<
-  HTMLButtonElement | HTMLAnchorElement,
-  ButtonProps
->((props, ref) => {
-  const {
-    className,
-    variant,
-    disableElevation,
-    size,
-    fullWidth,
-    asChild = false,
-    children,
-    ...rest
-  } = props;
+const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>((props, ref) => {
+  const { className, variant, disableElevation, size, fullWidth, asChild = false, children, ...rest } = props;
 
   let Comp: React.ElementType;
   let refType: React.Ref<HTMLButtonElement | HTMLAnchorElement>;
@@ -78,12 +60,12 @@ const Button = React.forwardRef<
       Comp = Slot;
       refType = ref;
       break;
-    case "href" in rest:
-      Comp = "a";
+    case 'href' in rest:
+      Comp = 'a';
       refType = ref as React.Ref<HTMLAnchorElement>;
       break;
     default:
-      Comp = "button";
+      Comp = 'button';
       refType = ref as React.Ref<HTMLButtonElement>;
       break;
   }
@@ -106,7 +88,7 @@ const Button = React.forwardRef<
     </Comp>
   );
 });
-Button.displayName = "Button";
+Button.displayName = 'Button';
 
 export { Button };
 export type { ButtonProps, ButtonAsButtonProps };

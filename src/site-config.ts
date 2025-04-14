@@ -2,11 +2,11 @@ import {type SiteConfig} from '@/types/site-config-types';
 
 const siteConfig: SiteConfig = {
     darkMode: true,
-    siteName: 'My Site',
+    siteName: 'Paddy Griffin',
     theme: {
         color: {
             primary: {
-                light: '#333366',
+                light: '#ff0000',
                 dark: '#333366'
             },
         }

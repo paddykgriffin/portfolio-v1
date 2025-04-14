@@ -6,7 +6,7 @@ import { ElementType, forwardRef } from 'react';
 const typograhyVariants = cva('', {
   variants: {
     variant: {
-      h1: 'scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl',
+      h1: 'scroll-m-20 text-4xl font-bold lg:text-5xl',
       h2: 'scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0 mb-4',
       h3: 'scroll-m-20 text-2xl font-semibold tracking-tight',
       h4: 'scroll-m-20 text-xl font-semibold tracking-tight',
