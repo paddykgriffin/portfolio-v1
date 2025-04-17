@@ -12,7 +12,7 @@ const siteConfig: SiteConfig = {
         }
     },
     layout: {
-        container: '2xl',
+        container: 'xl',
         header: {
             transparent: true,
             hideOnScroll: true,

@@ -13,11 +13,15 @@ const rootElement = document.getElementById('root');
 
 if (rootElement) {
   const root = ReactDOMClient.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <Bootstrap />
-    </React.StrictMode>,
-  );
+  if (process.env.NODE_ENV === 'production') {
+    root.render(
+      <React.StrictMode>
+        <Bootstrap />
+      </React.StrictMode>,
+    );
+  } else {
+    root.render(<Bootstrap />);
+  }
 } else {
   throw new Error('No root container found');
 }

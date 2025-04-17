@@ -1,6 +1,6 @@
 import { LuMail, LuPhone } from 'react-icons/lu';
 import { s3 } from '@/utility/s3';
-const CTA = () => {
+const ReadyToStart = () => {
   const background = s3('ready-to-start-background.gif');
 
   return (
@@ -10,7 +10,7 @@ const CTA = () => {
     >
       <div className="container mx-auto grid md:grid-cols-2 items-center">
         <div className="col-span-1">
-          <h2 className="text-5xl text-[#666] max-w-[75%] font-light pb-6">
+          <h2 className="text-5xl text-[#666] max-w-[75%] font-light pb-6 leading-16">
             Ready to start your next project? Contact me for more details.
           </h2>
           <div className="text-[#666]">
@@ -33,4 +33,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default ReadyToStart;

@@ -4,6 +4,17 @@ import { Typography } from '../Typography/Typography';
 import { Container } from '@/components/layout/Container/Container';
 
 const Hero = () => {
+  const handleScroll = () => {
+    const targetElement = document.getElementById('projects-home');
+    if (targetElement) {
+      const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section className="bg-primary text-center border-b-[6px] border-secondary text-white">
       <Container className="">
@@ -19,7 +30,14 @@ const Hero = () => {
         <Typography variant="body1" className="text-secondary/80 font-light lg:text-2xl mb-10">
           Creator of uniquely designed, high-quality websites.
         </Typography>
-        <Button href="#jsScrollTarget" id="jsScroll" className="btn" size={'large'} variant={'contained'}>
+        <Button
+          href="#projects-home"
+          id="jsScroll"
+          className="btn"
+          size={'large'}
+          variant={'contained'}
+          onClick={handleScroll}
+        >
           See my work
         </Button>
         <SocialIcons />

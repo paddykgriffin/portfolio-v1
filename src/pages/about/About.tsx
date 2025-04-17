@@ -2,10 +2,17 @@ import Layout from '@/components/layout/Layout';
 import { Typography } from '@/components/common/Typography/Typography';
 import { LuMail, LuPhone } from 'react-icons/lu';
 import { s3 } from '@/utility/s3';
+import SEO from '@/components/custom/SEO';
+import { Contact } from 'lucide-react';
+import ContactCTA from '@/components/common/ContactCTA/ContactCTA';
 function About() {
   return (
     <Layout pageTitle="About">
-      {' '}
+      <SEO
+        title="About"
+        description="Learn more about me! from my background in the industry to where I am
+  now and what drives me from day to day to stay motivated and driven in the web industry."
+      />
       <section>
         <div className="container mx-auto text-center">
           <div className="pt-12 ">
@@ -83,45 +90,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="pt-1 pb-24">
-          <div className="max-w-[50rem] mx-auto text-center">
-            <Typography variant={'h2'} className="lg:text-4xl !font-medium text-secondary">
-              Interested to hear more?
-            </Typography>
-            <Typography variant={'body1'} className="text-[#9d9da5] pb-8">
-              Drop me a mail or give me a call to find out more
-            </Typography>
-          </div>
-          <div className="grid max-w-[50rem] mx-auto md:grid-cols-2">
-            <div className="text-center">
-              <span className="bg-gray-200/50 w-[200px] h-[200px] grid mx-auto place-items-center rounded-full mb-8">
-                <LuPhone className="text-7xl text-[#666] text-center mx-auto" />
-              </span>
-              <Typography variant={'h3'} className="font-medium text-secondary pb-4">
-                Phone
-              </Typography>
-              <a href="tel:00353879908117" className="text-gray-500 hover:text-primary/80 global-transition">
-                +353879908117
-              </a>
-            </div>
-            <div className="text-center">
-              <span className="bg-gray-200/50 w-[200px] h-[200px] grid mx-auto place-items-center rounded-full mb-8">
-                <LuMail className="text-7xl text-[#666] text-center mx-auto" />
-              </span>
-              <Typography variant={'h3'} className="font-medium text-secondary pb-4">
-                Email
-              </Typography>
-              <a
-                href="mailto:paddygriffin@gmail.com?subject=Website%20email%20enquiry"
-                className="text-gray-500 hover:text-primary/80 global-transition"
-              >
-                paddygriffin@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactCTA />
     </Layout>
   );
 }

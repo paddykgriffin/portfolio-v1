@@ -5,7 +5,7 @@ import Logo from '../custom/Logo';
 const Header = () => {
   return (
     <header className=" bg-primary text-white py-6">
-      <Container className="flex flex-row items-center justify-between" maxWidth="5xl">
+      <Container className="flex flex-row items-center justify-between !max-w-full">
         <div>
           <Logo />
         </div>

@@ -1,17 +1,15 @@
-import { BrowserRouter } from 'react-router-dom';
-import App from './routes/App';
-import { ReactNode } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { AppRoutes } from './routes/AppRoutes';
 
-const Bootstrap: React.FC = (): ReactNode => {
-  let AppToRender = App;
+const router = createBrowserRouter(AppRoutes());
 
-  const AppContent = (
-    <BrowserRouter>
-      <AppToRender />
-    </BrowserRouter>
+const Bootstrap = () => {
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   );
-
-  return AppContent;
 };
 
 export default Bootstrap;

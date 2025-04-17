@@ -1,4 +1,4 @@
-import { LuCode, LuLaptop, LuPencil, LuTablet } from 'react-icons/lu';
+import { LuCode, LuLaptop, LuTablet } from 'react-icons/lu';
 
 const CoreSkills = () => {
   return (
@@ -12,7 +12,7 @@ const CoreSkills = () => {
               </span>
             </div>
             <h3 className="text-2xl mb-12 pt-6 text-secondary">UX</h3>
-            <p className="px-12">
+            <p className="px-12 text-2xl">
               User experience is a crucial to ensuring the end product works successfully to maximise results.
             </p>
           </div>
@@ -22,12 +22,9 @@ const CoreSkills = () => {
               <span className="">
                 <LuLaptop className="w-30 h-30 text-center mx-auto stroke-primary/70" />
               </span>
-              <span className="absolute top-10 right-5 ">
-                <LuPencil className="w-15 h-15 stroke-primary/95" />
-              </span>
             </div>
             <h3 className="text-2xl mb-12 pt-6 text-secondary">Visual Design</h3>
-            <p className="px-12">From a blank canvas, a unique design is created.</p>
+            <p className="px-12 text-2xl">From a blank canvas, a unique design is created.</p>
           </div>
 
           <div className="text-center mt-[-95px]">
@@ -37,7 +34,7 @@ const CoreSkills = () => {
               </span>
             </div>
             <h3 className="text-2xl mb-12 pt-6 text-secondary">Frontend</h3>
-            <p className="px-12">
+            <p className="px-12 text-2xl">
               With a personalised design in place, your website will be coded to the highest standard.
             </p>
           </div>

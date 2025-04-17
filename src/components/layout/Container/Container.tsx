@@ -3,7 +3,7 @@ import siteConfig from '@/site-config';
 import type { HTMLProps } from '@/types/common.types';
 import type { ReactNode } from 'react';
 
-export type MaxWidthOption = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
+export type MaxWidthOption = 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl';
 
 export type ContainerProps = HTMLProps<'div'> & {
   maxWidth?: MaxWidthOption;
@@ -16,10 +16,11 @@ const maxWidthClasses: Record<MaxWidthOption, string> = {
   md: 'md:max-w-(--breakpoint-md) sm:max-w-(--breakpoint-sm)',
   lg: 'lg:max-w-(--breakpoint-lg) md:max-w-(--breakpoint-md) sm:max-w-(--breakpoint-sm)',
   xl: 'xl:max-w-(--breakpoint-xl)',
-  '2xl': '2xl:max-w-[1366px] xl:max-w-(--breakpoint-lg)',
-  '3xl': '3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
-  '4xl': '4xl:max-w-(--breakpoint-3xl) 3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
-  '5xl': '5xl:max-w-(--breakpoint-4xl) 4xl:max-w-(--breakpoint-3xl) 3xl:max-w-(--breakpoint-2xl) 2xl:max-w-[1366px] xl:max-w-(--breakpoint-xl)',
+  '2xl': '2xl:max-w-[--breakpoint-2xl] xl:max-w-(--breakpoint-lg)',
+  '3xl': '3xl:max-w-(--breakpoint-2xl)',
+  '4xl': '4xl:max-w-(--breakpoint-3xl)',
+  '5xl': '5xl:max-w-(--breakpoint-4xl)',
+  '6xl': '6xl:max-w-(--breakpoint-5xl)',
 };
 
 const Container = ({
