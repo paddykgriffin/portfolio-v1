@@ -1,9 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import { Typography } from '@/components/common/Typography/Typography';
-import { LuMail, LuPhone } from 'react-icons/lu';
 import { s3 } from '@/utility/s3';
 import SEO from '@/components/custom/SEO';
-import { Contact } from 'lucide-react';
 import ContactCTA from '@/components/common/ContactCTA/ContactCTA';
 function About() {
   return (
@@ -34,9 +32,9 @@ function About() {
                   Who am I?
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4 pr-60">
-                  I am a Dublin-based Frontend Developer &amp; UX Designer, focusing on creating and building pixel
-                  perfect websites and interfaces. I pride myself on my attention to detail and problem-solving whilst
-                  using my wide range of skills to incorporate new technologies and methodologies.
+                  I am a Dublin-based Frontend Developer focusing on creating and building pixel perfect websites and
+                  interfaces. I pride myself on my attention to detail and problem-solving whilst using my wide range of
+                  skills to incorporate new technologies and methodologies.
                 </Typography>
 
                 <Typography variant="body1" className="text-[#666] pb-4  pr-60">
@@ -45,34 +43,19 @@ function About() {
                 </Typography>
 
                 <Typography variant="body1" className="text-[#666] pb-4  pr-60">
-                  I am currently employed as a Senior Frontend Developer for a leading, award-winning digital
-                  transformation agency in Dublin.
-                </Typography>
-
-                <Typography variant={'h3'} className="text-secondary">
-                  Awards{' '}
-                </Typography>
-                <Typography variant="body1" className="text-[#666] pb-4  pr-60">
-                  In my current role, I have worked on the <a href="/projects/cpw.html">Carphone Warehouse</a> website,
-                  which was awarded{' '}
-                  <a
-                    className="text-primary decoration-dotted underline hover:text-primary/80"
-                    href="https://www.kentico.com/customers/site-of-the-year/site-of-the-year-2015#site44254"
-                    target="_blank"
-                  >
-                    "Best Customer Success Site of the Year"
-                  </a>{' '}
-                  in 2015.
+                  I am currently employed as a Web Developer for a Accenture Ireland.
                 </Typography>
 
                 <Typography variant={'h3'} className="text-secondary">
                   Technical and Creative Skills
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  pr-60">
-                  I have a very broad range of technical skills which include HTML, CSS, SCSS, jQuery &amp; Javascript.{' '}
+                  I have a very broad range of technical skills which include HTML, CSS, SCSS, TailwindCSS, MaterialUI
+                  Javascript, ReactJs.{' '}
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  pr-60">
-                  I have gained experience using the .NET framework in my current role.{' '}
+                  In my current role I have grown as a developer and very experienced in building ReactJS apps with
+                  various techniques and using different libraries such as Redux, React Router, Axios and many more.
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  pr-60">
                   As well as being a proficient coder, I have a passionate creative flair for designing websites,
