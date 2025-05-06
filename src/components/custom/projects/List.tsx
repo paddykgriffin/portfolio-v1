@@ -1,5 +1,5 @@
 import { projects } from './data';
-import ProjectBlock from './ProjectBlock';
+import ProjectBlock from '../ProjectBlock';
 
 const ProjectList = () => {
   return (

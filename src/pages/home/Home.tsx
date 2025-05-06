@@ -4,7 +4,7 @@ import Hero from '@/components/common/Hero/Hero';
 import ReadyToStart from '@/components/custom/ReadyToStart';
 import CoreSkills from '@/components/custom/CoreSkills';
 import UniqueIdeas from '@/components/custom/UniqueIdeas';
-import FeaturedProjectsHome from '@/components/projects/FeaturedProjectsHome';
+import FeaturedProjectsHome from '@/components/custom/FeaturedProjectsHome';
 import SEO from '@/components/custom/SEO';
 
 function Home() {

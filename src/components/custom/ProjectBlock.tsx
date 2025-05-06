@@ -1,5 +1,5 @@
 import { LuTag } from 'react-icons/lu';
-import { Project } from './Item';
+import { Project } from './projects/Item';
 import { s3 } from '@/utility/s3';
 import { Button } from '../common/Button/Button';
 import { Link } from 'react-router-dom';

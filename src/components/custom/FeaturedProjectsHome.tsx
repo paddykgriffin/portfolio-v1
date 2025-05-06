@@ -1,7 +1,7 @@
 import { Button } from '@/components/common/Button/Button';
 import { LuChevronsRight } from 'react-icons/lu';
-import { projects } from './data';
-import ProjectBlock from './ProjectBlock';
+import { projects } from '@/components/custom/projects/data';
+import ProjectBlock from '@/components/custom/ProjectBlock';
 
 const FeaturedProjectsHome = () => {
   return (

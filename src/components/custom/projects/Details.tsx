@@ -1,14 +1,14 @@
 import { useParams, Link } from 'react-router-dom';
 import { projects } from './data';
-import { Project } from './Item';
+import { Project } from '@/types/common.types';
 import { LuChevronsLeft, LuLink } from 'react-icons/lu';
-import { Button } from '../common/Button/Button';
-import Layout from '../layout/Layout';
-import { Container } from '../layout/Container/Container';
-import { Typography } from '../common/Typography/Typography';
-import RelatedProjects from './RelatedProjects';
+import { Button } from '../../common/Button/Button';
+import Layout from '../../layout/Layout';
+import { Container } from '../../layout/Container/Container';
+import { Typography } from '../../common/Typography/Typography';
+import RelatedProjects from '../RelatedProjects';
 import { s3 } from '@/utility/s3';
-import SEO from '../custom/SEO';
+import SEO from '../SEO';
 
 const ProjectDetails = () => {
   const { id } = useParams();

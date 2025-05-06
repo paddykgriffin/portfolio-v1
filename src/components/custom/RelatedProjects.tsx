@@ -1,7 +1,5 @@
-//import { Link } from 'react-router-dom';
-import { Project } from './Item';
+import { Project } from '@/types/common.types';
 import { Typography } from '../common/Typography/Typography';
-//import { s3 } from '@/utility/s3';
 import ProjectBlock from './ProjectBlock';
 
 interface RelatedProjectsProps {
