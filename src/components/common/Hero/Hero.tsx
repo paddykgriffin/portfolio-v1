@@ -33,7 +33,7 @@ const Hero = () => {
         <Button
           href="#projects-home"
           id="jsScroll"
-          className="btn"
+          className="btn !py-6 !px-8 !text-xl"
           size={'large'}
           variant={'contained'}
           onClick={handleScroll}

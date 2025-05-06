@@ -17,10 +17,15 @@ const ReadyToStart = () => {
             <ul className="o-list-bare">
               <li className="flex items-center py-3">
                 <LuMail className="mr-4 w-6 h-6 text-[#666]" />
-                <a href="mailto:paddygriffin@gmail.com">paddygriffin@gmail.com</a>
+                <a href="mailto:paddygriffin@gmail.com" className="hover:text-gray-800">
+                  paddygriffin@gmail.com
+                </a>
               </li>
               <li className="flex items-center">
-                <LuPhone className="mr-4 w-6 h-6 text-[#666]" /> <a href="tel:00353879908117">+353 87 9908117</a>
+                <LuPhone className="mr-4 w-6 h-6 text-[#666]" />{' '}
+                <a href="tel:00353879908117" className="hover:text-gray-800">
+                  +353 87 9908117
+                </a>
               </li>
             </ul>
           </div>

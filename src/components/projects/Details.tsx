@@ -1,39 +1,112 @@
 import { useParams, Link } from 'react-router-dom';
 import { projects } from './data';
 import { Project } from './Item';
-import { LuChevronsLeft } from 'react-icons/lu';
+import { LuChevronsLeft, LuLink } from 'react-icons/lu';
 import { Button } from '../common/Button/Button';
 import Layout from '../layout/Layout';
+import { Container } from '../layout/Container/Container';
+import { Typography } from '../common/Typography/Typography';
+import RelatedProjects from './RelatedProjects';
+import { s3 } from '@/utility/s3';
+import SEO from '../custom/SEO';
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const item: Project | undefined = projects.find(i => i.id === Number(id));
 
-  if (!item) return <div>Item not found.</div>;
+  if (!item)
+    return (
+      <Layout>
+        <div className="py-12">
+          <Typography variant="h1" className="text-center pb-6">
+            Project not found!
+          </Typography>
+          <Typography variant="body1" className="text-center">
+            try again later
+          </Typography>
+        </div>
+      </Layout>
+    );
 
   return (
     <Layout pageTitle={item.name}>
+      <SEO title={item.name} description={item.details.description} />
       <div className="px-8 py-4">
         <Link to="/projects" className="text-gray-400 hover:text-secondary flex items-center global-transition">
           <LuChevronsLeft className="mr-2 w-4 h-4" /> Back to projects
         </Link>
       </div>
-      <div className="container mx-auto">
-        <div className="p-4 bg-red-500">
-          <h2 className="text-2xl mb-2">{item.name}</h2>
-          {/* <p>{item.description}</p> */}
+      <Container>
+        <div className="p-4  pb-12 max-w-(--breakpoint-md) mx-auto ">
+          <div className="text-center">
+            <Typography variant={'h1'} className="text-2xl mb-6 lg:text-6xl !font-medium text-[#666]">
+              {item.name}
+            </Typography>
 
-          <div className="text-center mt-10">
-            <Button
-              href="/projects"
-              className="btn text-center mx-auto text-2xl !py-9 !px-6 hover:!bg-primary/80 bg-primary inline-flex justify-between"
-            >
-              <LuChevronsLeft className="mr-4 w-6 h-6" />
-              Back to projects
-            </Button>
+            {item.details && (
+              <Typography variant="body1" className="text-2xl">
+                {item.details.description}
+              </Typography>
+            )}
           </div>
+
+          {item.details && (
+            <>
+              <img
+                src={`${s3(item.details.image)}.jpg`}
+                alt={item.name}
+                className="w-full h-auto mx-auto text-center my-12"
+              />
+              <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10 pb-12">
+                <Typography
+                  variant="h4"
+                  className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-secondary text-2xl"
+                >
+                  My Role
+                </Typography>
+                {item.details.bodyText}
+              </div>
+            </>
+          )}
+
+          {item.tags && (
+            <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10">
+              <Typography
+                variant="h4"
+                className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-secondary text-2xl"
+              >
+                Project Features
+              </Typography>
+              <ul className="list-disc flex justify-center items-center mx-auto max-w-(--breakpoint-sm) gap-4 flex-wrap">
+                {item.tags.map((feature, index) => (
+                  <li key={index} className="text-xl text-gray-600 pr-4">
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {item.details && (
+            <div className="text-center mt-12">
+              <Button variant="contained" className="btn" href={item.details.link} target="_blank">
+                <LuLink className="mr-2 w-4 h-4" />
+                Visit site
+              </Button>
+            </div>
+          )}
         </div>
-      </div>
+
+        <div className="border-t-2 border-b-gray-300">
+          {item.related && <RelatedProjects relatedIds={item.related} allProjects={projects} />}
+        </div>
+        <div className="text-center mt-10 pb-12">
+          <Button href="/projects" className="btn">
+            <LuChevronsLeft className="mr-4 w-6 h-6" />
+            Back to projects
+          </Button>
+        </div>
+      </Container>
     </Layout>
   );
 };

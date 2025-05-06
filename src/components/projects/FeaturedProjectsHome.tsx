@@ -17,11 +17,7 @@ const FeaturedProjectsHome = () => {
       </div>
 
       <div className="text-center mt-10">
-        <Button
-          variant="contained"
-          className="btn text-center mx-auto text-2xl !py-9 !px-6 hover:!bg-primary/80 bg-primary"
-          href="/projects"
-        >
+        <Button variant="contained" className="btn " href="/projects">
           View recent projects
           <LuChevronsRight className="ml-4 w-6 h-6" />
         </Button>
