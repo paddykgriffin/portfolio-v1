@@ -1,6 +1,7 @@
 import ContactCTA from '@/components/common/ContactCTA/ContactCTA';
 import { Typography } from '@/components/common/Typography/Typography';
 import SEO from '@/components/custom/SEO';
+import { Container } from '@/components/layout/Container/Container';
 import Layout from '@/components/layout/Layout';
 
 function Contact() {
@@ -12,16 +13,13 @@ function Contact() {
   on a new project or something else!"
       />
       <section>
-        <div className="container mx-auto text-center">
-          <div className="pt-12 pb-24">
+        <Container className="text-center">
+          <div className="pt-12 pb-6">
             <Typography variant={'h1'} className="lg:text-6xl !font-medium text-[#666]">
               Contact me
             </Typography>
-            {/* <Typography variant={'body1'} className="text-[#9d9da5] pt-6">
-              Drop me a mail or give me a call to find out more
-            </Typography> */}
           </div>
-        </div>
+        </Container>
       </section>
 
       <ContactCTA title={false} />

@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-primary text-center border-b-[6px] border-secondary text-white">
+    <section className="bg-primary text-center border-b-[6px] border-secondary text-white py-8 md:py-0">
       <Container className="">
         <Typography
           variant="h1"

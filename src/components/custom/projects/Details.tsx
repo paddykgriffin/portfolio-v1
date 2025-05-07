@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { projects } from './data';
+import { projects } from '../../../pages/projects/data';
 import { Project } from '@/types/common.types';
 import { LuChevronsLeft, LuLink } from 'react-icons/lu';
 import { Button } from '../../common/Button/Button';
@@ -44,7 +44,7 @@ const ProjectDetails = () => {
             </Typography>
 
             {item.details && (
-              <Typography variant="body1" className="text-2xl">
+              <Typography variant="body1" className="text-2xl text-gray-600">
                 {item.details.description}
               </Typography>
             )}
@@ -53,11 +53,11 @@ const ProjectDetails = () => {
           {item.details && (
             <>
               <img
-                src={`${s3(item.details.image)}.jpg`}
+                src={`${s3(item.details.image)}.png`}
                 alt={item.name}
                 className="w-full h-auto mx-auto text-center my-12"
               />
-              <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10 pb-12">
+              <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10 pb-12 text-gray-600">
                 <Typography
                   variant="h4"
                   className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-secondary text-2xl"

@@ -1,5 +1,5 @@
 import { LuTag } from 'react-icons/lu';
-import { Project } from './projects/Item';
+import { Project } from '@/types/common.types';
 import { s3 } from '@/utility/s3';
 import { Button } from '../common/Button/Button';
 import { Link } from 'react-router-dom';
@@ -12,7 +12,7 @@ const ProjectBlock = ({ name, id, logo, thumbnail, tags }: Project) => {
           <img
             src={`${s3(logo)}.svg`}
             alt={name}
-            className="logo mx-auto absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:-translate-y-18/16 transition-transform duration-500 h-28 w-90"
+            className="logo mx-auto absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:-translate-y-18/16 transition-transform duration-500 h-28 w-60 md:w-90"
           />
 
           <div className="col-start-1 row-start-1 tags flex text-white opacity-0 justify-center absolute left-1/2 -translate-x-1/2 top-1/2 group-hover:opacity-100 w-full">
@@ -34,4 +34,3 @@ const ProjectBlock = ({ name, id, logo, thumbnail, tags }: Project) => {
 };
 
 export default ProjectBlock;
-//absolute top-0 left-0 right-0 bottom-0 bg-black/50 flex flex-col items-center justify-center gap-2 p-4
