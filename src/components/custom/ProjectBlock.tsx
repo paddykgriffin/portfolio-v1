@@ -3,11 +3,12 @@ import { Project } from '@/types/common.types';
 import { s3 } from '@/utility/s3';
 import { Button } from '../common/Button/Button';
 import { Link } from 'react-router-dom';
+import { slugify } from '@/utility/slugify';
 
-const ProjectBlock = ({ name, id, logo, thumbnail, tags }: Project) => {
+const ProjectBlock = ({ name, logo, thumbnail, tags }: Project) => {
   return (
     <div className="grid text-center group overflow-hidden">
-      <Link to={`/projects/${id}`} className="col-start-1 row-start-1 content-center z-20">
+      <Link to={`/projects/${slugify(name)}`} className="col-start-1 row-start-1 content-center z-20">
         <div className="relative h-1/2">
           <img
             src={`${s3(logo)}.svg`}

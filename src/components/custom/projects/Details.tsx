@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { projects } from '../../../pages/projects/data';
+import { projects } from './data';
 import { Project } from '@/types/common.types';
 import { LuChevronsLeft, LuLink } from 'react-icons/lu';
 import { Button } from '../../common/Button/Button';
@@ -9,10 +9,13 @@ import { Typography } from '../../common/Typography/Typography';
 import RelatedProjects from '../RelatedProjects';
 import { s3 } from '@/utility/s3';
 import SEO from '../SEO';
+import { slugify } from '@/utility/slugify';
 
 const ProjectDetails = () => {
-  const { id } = useParams();
-  const item: Project | undefined = projects.find(i => i.id === Number(id));
+  // Get the route parameter
+  const { name } = useParams<{ name: string }>();
+
+  const item: Project | undefined = projects.find(project => slugify(project.name) === name);
 
   if (!item)
     return (

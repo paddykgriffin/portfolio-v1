@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const projects: Project[] = [
   {
     id: 1,
-    name: 'Ballycullen',
+    name: 'Ballycullen Community Church',
     showOnHome: true,
     logo: 'logo-bcc',
     tags: ['wordpress', 'visual design', 'development', 'UX', 'SEO', 'Social Media'],
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    name: 'Blessington No.1',
+    name: 'Blessington No1 School',
     showOnHome: true,
     logo: 'logo-blessington',
     tags: ['wordpress', 'visual design', 'development', 'UX', 'SEO', 'Social Media'],
@@ -78,7 +78,7 @@ export const projects: Project[] = [
           </p>
         </div>
       ),
-      link: 'https://www.blessingtonno1.com',
+      link: 'https://www.blessingtonno1.ie',
     },
     related: [1, 3],
   },
@@ -100,7 +100,7 @@ export const projects: Project[] = [
           </p>
         </div>
       ),
-      link: '#',
+      link: 'https://tailwind-example-git-master-paddy-griffins-projects.vercel.app/',
     },
     related: [1, 2],
   },

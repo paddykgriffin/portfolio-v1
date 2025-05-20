@@ -1,6 +1,6 @@
 import { Button } from '@/components/common/Button/Button';
 import { LuChevronsRight } from 'react-icons/lu';
-import { projects } from '@/pages/projects/data';
+import { projects } from '@/components/custom/projects/data';
 import ProjectBlock from '@/components/custom/ProjectBlock';
 
 const FeaturedProjectsHome = () => {
@@ -17,7 +17,7 @@ const FeaturedProjectsHome = () => {
       </div>
 
       <div className="text-center mt-10">
-        <Button variant="contained" className="btn " href="/projects">
+        <Button variant="contained" className="btn" href="/projects">
           View recent projects
           <LuChevronsRight className="ml-4 w-6 h-6" />
         </Button>
