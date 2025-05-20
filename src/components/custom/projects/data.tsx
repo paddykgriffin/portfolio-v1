@@ -100,7 +100,7 @@ export const projects: Project[] = [
           </p>
         </div>
       ),
-      link: 'https://tailwind-example-git-master-paddy-griffins-projects.vercel.app/',
+      link: 'https://tailwind-example-swart.vercel.app/',
     },
     related: [1, 2],
   },
