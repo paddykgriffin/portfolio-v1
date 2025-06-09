@@ -131,19 +131,19 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    name: 'Project 2 - MUI Example',
-    logo: 'logo',
+    name: 'MUI Example',
+    logo: 'logo-landify',
     tags: ['development', 'mui', 'react'],
-    thumbnail: 'marina-zvada-i-rflWX15kg-unsplash',
+    thumbnail: 'bg-landify',
     details: {
       description: 'This is a description of the project.',
-      image: 'bg-name',
+      image: 'th-landify',
       bodyText: (
         <div>
           <p>
             The purpose of this project is create an example of React App using{' '}
             <Link
-              to="https://mui.com/"
+              to="https://mui.com"
               className="underline decoration-dotted text-primary hover:decoration-solid global-transition"
               target="_blank"
             >
@@ -153,7 +153,7 @@ export const projects: Project[] = [
           </p>
         </div>
       ),
-      link: '#',
+      link: 'https://mui-vite-example.vercel.app/',
     },
     related: [4, 6],
   },
