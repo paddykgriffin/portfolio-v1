@@ -19,7 +19,7 @@ function About() {
               About me
             </Typography>
             <Typography variant={'body1'} className="text-[#9d9da5] pt-6">
-              Frontend Developer, Creative Designer & Excellent Problem Solver
+              Web Developer, Creative Designer & Excellent Problem Solver
             </Typography>
           </div>
         </Container>
@@ -33,7 +33,7 @@ function About() {
                   Who am I?
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4 xl:pr-60">
-                  I am a Dublin-based Frontend Developer focusing on creating and building pixel perfect websites and
+                  I am a Dublin-based Web Developer focusing on creating and building pixel perfect websites and
                   applications. I pride myself on my attention to detail and problem-solving whilst using my wide range
                   of skills to incorporate new technologies and methodologies.
                 </Typography>
@@ -44,8 +44,8 @@ function About() {
                 </Typography>
 
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
-                  I am currently employed as a Frontend Developer for a Accenture Ireland working on small to large
-                  scale projects for global leading brands.
+                  I am currently employed as a Web Developer for a Accenture Ireland working on small to large scale
+                  projects for global leading brands.
                 </Typography>
 
                 <Typography variant={'h3'} className="text-secondary">
@@ -53,7 +53,7 @@ function About() {
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
                   I have a very broad range of technical skills which include HTML, CSS, SCSS, TailwindCSS, MaterialUI,
-                  Javascript, ReactJs.
+                  Styled Components Javascript, ReactJS, Payload CMS & NextJS.
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
                   In my current role I have grown as a web developer learning new skills and technologies suchs as

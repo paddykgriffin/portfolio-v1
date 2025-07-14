@@ -136,7 +136,7 @@ export const projects: Project[] = [
     tags: ['development', 'mui', 'react'],
     thumbnail: 'bg-landify',
     details: {
-      description: 'This is a description of the project.',
+      description: 'Lovely example project built in React using Material UI.',
       image: 'th-landify',
       bodyText: (
         <div>
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     tags: ['development', 'react', 'styled-components'],
     thumbnail: 'bg-paddy-hiker',
     details: {
-      description: 'This is a description of the project.',
+      description: 'A simple SPA built with React and Styled Components.',
       image: 'th-paddy-hiker',
       bodyText: (
         <div>
