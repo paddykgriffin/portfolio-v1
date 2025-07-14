@@ -159,13 +159,13 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    name: 'Project 3 - Styled Components Example',
-    logo: 'logo',
+    name: 'Paddy Hiker',
+    logo: 'logo-paddy-hiker',
     tags: ['development', 'react', 'styled-components'],
-    thumbnail: 'marina-zvada-i-rflWX15kg-unsplash',
+    thumbnail: 'bg-paddy-hiker',
     details: {
       description: 'This is a description of the project.',
-      image: 'bg-name',
+      image: 'th-paddy-hiker',
       bodyText: (
         <div>
           <p>
@@ -181,7 +181,7 @@ export const projects: Project[] = [
           </p>
         </div>
       ),
-      link: '#',
+      link: 'https://styledcomponent-example.vercel.app',
     },
     related: [4, 5],
   },
