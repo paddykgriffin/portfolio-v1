@@ -42,7 +42,7 @@ const ProjectDetails = () => {
       <Container>
         <div className="p-4  pb-12 max-w-(--breakpoint-md) mx-auto ">
           <div className="text-center">
-            <Typography variant={'h1'} className="text-2xl mb-6 lg:text-6xl !font-medium text-[#666]">
+            <Typography variant={'h1'} className="text-2xl mb-6 lg:text-6xl !font-medium text-primary">
               {item.name}
             </Typography>
 
@@ -63,7 +63,7 @@ const ProjectDetails = () => {
               <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10 pb-12 text-gray-600">
                 <Typography
                   variant="h4"
-                  className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-secondary text-2xl"
+                  className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-primary text-2xl"
                 >
                   My Role
                 </Typography>
@@ -76,7 +76,7 @@ const ProjectDetails = () => {
             <div className="text-center [&_p]:pb-4 [&_p]:text-xl [&_p]:leading-10">
               <Typography
                 variant="h4"
-                className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-secondary text-2xl"
+                className="relative inline-flex font-normal mb-4 pb-3 after:absolute after:block after:w-1/3 after:h-[2px] after:bg-gray-400 after:mx-auto after:left-1/2 after:-translate-x-1/2 after:bottom-0 text-primary text-2xl"
               >
                 Project Features
               </Typography>

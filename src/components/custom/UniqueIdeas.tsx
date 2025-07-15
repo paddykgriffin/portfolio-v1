@@ -6,10 +6,10 @@ const UniqueIdeas = () => {
     <section className="text-center py-12 md:py-24 text-[#666] bg-[#f3f3f1]">
       <Container>
         <Typography variant="body1" className="leading-7 text-2xl mb-6 text-gray-600">
-          Unique ideas requires great planning.
+          Creative solutions start with thoughtful strategy.
         </Typography>
         <Typography variant="body1" className="leading-7 text-2xl mb-6 text-gray-600">
-          All my projects use 3 core processes to develop a beautiful site.
+          Every project is built on three essential pillars for a stunning web application.
         </Typography>
       </Container>
     </section>

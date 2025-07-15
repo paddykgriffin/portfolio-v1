@@ -15,11 +15,11 @@ function About() {
       <section>
         <Container className="text-center">
           <div className="pt-12 ">
-            <Typography variant={'h1'} className="lg:text-6xl !font-medium text-[#666]">
+            <Typography variant={'h1'} className="lg:text-6xl !font-medium text-primary">
               About me
             </Typography>
             <Typography variant={'body1'} className="text-[#9d9da5] pt-6">
-              Web Developer, Creative Designer & Excellent Problem Solver
+              Frontend Engineer, UI Specialist & Excellent Problem Solver
             </Typography>
           </div>
         </Container>
@@ -29,7 +29,7 @@ function About() {
           <Container className="border-b-2 border-b-gray-500/30 pb-16 mb-16">
             <div className="grid md:grid-cols-12 gap-12">
               <div className="md:col-span-7">
-                <Typography variant={'h3'} className="text-secondary">
+                <Typography variant={'h3'} className="text-primary">
                   Who am I?
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4 xl:pr-60">
@@ -44,26 +44,27 @@ function About() {
                 </Typography>
 
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
-                  I am currently employed as a Web Developer for a Accenture Ireland working on small to large scale
-                  projects for global leading brands.
+                  I am currently employed as a Web Developer for a Accenture Ireland (S&PP Global Interactive Graphic
+                  Design). I work on a global development team buidling first class web applications for global clients.
                 </Typography>
 
-                <Typography variant={'h3'} className="text-secondary">
+                <Typography variant={'h3'} className="text-primary">
                   Technical and Creative Skills
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
-                  I have a very broad range of technical skills which include HTML, CSS, SCSS, TailwindCSS, MaterialUI,
-                  Styled Components Javascript, ReactJS, Payload CMS & NextJS.
+                  My technical skillset spans HTML, CSS, SCSS, TailwindCSS, Material UI, Styled Components, JavaScript,
+                  ReactJS, Payload CMS, and NextJS.
                 </Typography>
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
-                  In my current role I have grown as a web developer learning new skills and technologies suchs as
-                  ReactJs, NextJs and similar frameworks. I have gained a lot of experience in building ReactJS apps
-                  with various techniques and using different libraries such as Redux, React Router, Axios and many
-                  more.
+                  In my current position, I have continued to develop as a web developer, expanding my expertise with
+                  technologies like ReactJS, NextJS, and related frameworks. I have gained substantial experience
+                  building React applications using a variety of techniques and libraries, including Redux, React
+                  Router, Axios, and more.
                 </Typography>
                 <Typography variant="body1" className="text-[#666] md:pb-4 xl:pr-60">
-                  As well as being a proficient coder, I have a passionate creative flair for designing websites,
-                  interfaces, email newsletters and campaign landing pages using Adobe Creative Suite.
+                  Alongside my coding expertise, I bring a strong creative approach to designing websites, interfaces,
+                  email newsletters, and campaign landing pages using Adobe Creative Suite, Figma and other design
+                  tools.
                 </Typography>
               </div>
               <div className="md:col-span-5 md:text-right">

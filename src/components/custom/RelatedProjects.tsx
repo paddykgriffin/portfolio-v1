@@ -14,7 +14,7 @@ const RelatedProjects = ({ relatedIds, allProjects }: RelatedProjectsProps) => {
 
   return (
     <div className="mt-12">
-      <Typography variant="h2" className="text-center text-secondary pb-6 md:pb-8 md:text-4xl">
+      <Typography variant="h2" className="text-center text-primary pb-6 md:pb-8 md:text-4xl">
         Liked this project? Check out some more...
       </Typography>
       <div

@@ -11,14 +11,13 @@ export const projects: Project[] = [
     thumbnail: 'bg-bcc',
     details: {
       description:
-        'Local church website built using wordpress to help communicate abotu the church in positive visual way.',
+        'Local church website built using wordpress to help communicate about the church and its activities to the local community.',
       image: 'th-bcc',
       bodyText: (
         <div>
           <p>
-            As I was the sole person working on this project, my responsibilities covered a full design process which
-            included UX, UI, Frontend and backend development. The first phase started with meeting the client to
-            discuss the requirements of their website.
+            My responsibilities covered a full design process which included UX, UI, Frontend and backend development.
+            The first phase started with meeting the client to discuss the requirements of their website.
           </p>
           <p>
             I carried out some research of other church websites in Ireland for comparison to get an idea of what
@@ -57,7 +56,8 @@ export const projects: Project[] = [
     tags: ['wordpress', 'visual design', 'development', 'UX', 'SEO', 'Social Media'],
     thumbnail: 'bg-bless',
     details: {
-      description: 'A primary school website built with wordpress to act as brochure and communication tool.',
+      description:
+        'A primary school website built with wordpress to help communicate with current parents and new prospective parents.',
       image: 'th-bless',
       bodyText: (
         <div>
@@ -118,10 +118,9 @@ export const projects: Project[] = [
           <p>
             I was approached to aid in upgrading the website to be responsive and improve its UX and SEO capabilities.
           </p>
-          <p>I upgraded the site to use a wordpress theme which was clean and easy to work with.</p>
           <p>
-            One of the main goals was to modernise the site and make it more user friendly. I achieved this by using a
-            simple theme which was easy to navigate and had a clean design.
+            The site to uses a wordpress theme which was clean and easy to work with. One of the main goals was to
+            modernise the site and make it more user friendly.
           </p>
         </div>
       ),

@@ -20,20 +20,20 @@ const Hero = () => {
       <Container className="">
         <Typography
           variant="h1"
-          className="text-secondary font-light lg:text-[100px] border-b-[4px] mb-6 pb-6 inline-flex border-secondary/40"
+          className="text-white font-light text-5xl lg:text-[100px] border-b-[4px] mb-6 pb-6 inline-flex border-secondary/40"
         >
           Paddy Griffin
         </Typography>
         <Typography variant="body1" className="text-secondary lg:text-2xl">
-          Frontend Developer &amp; UX Designer
+          Frontend Engineer | UI Specialist
         </Typography>
-        <Typography variant="body1" className="text-secondary/80 font-light lg:text-2xl mb-10">
-          Creator of uniquely designed, high-quality websites.
+        <Typography variant="body1" className="text-white font-light lg:text-2xl mb-10">
+          Building visually engaging, performant web experiences.
         </Typography>
         <Button
           href="#projects-home"
           id="jsScroll"
-          className="btn !py-6 !px-8 !text-xl"
+          className="btn !py-6 !px-8  !bg-secondary !text-primary hover:!bg-secondary/60 "
           size={'large'}
           variant={'contained'}
           onClick={handleScroll}

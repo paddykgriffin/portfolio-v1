@@ -4,19 +4,19 @@ import { Typography } from '../common/Typography/Typography';
 
 const data = [
   {
-    title: 'UX',
-    description: 'User experience is a crucial to ensuring the end product works successfully to maximise results.',
-    icon: <LuTablet className="w-14 h-14 lg:w-30 lg:h-30  text-center mx-auto stroke-primary/70" />,
+    title: 'User Experience',
+    description: 'Crafting intuitive interfaces that delight users and drive engagement.',
+    icon: <LuTablet className="w-14 h-14 lg:w-30 lg:h-30 mx-auto stroke-primary" />,
   },
   {
-    title: 'Visual Design',
-    description: 'From a blank canvas, a unique design is created.',
-    icon: <LuLaptop className="w-14 h-14 lg:w-30 lg:h-30  text-center mx-auto stroke-primary/70" />,
+    title: 'Design',
+    description: 'Transforming ideas into visually compelling and memorable digital experiences.',
+    icon: <LuLaptop className="w-14 h-14 lg:w-30 lg:h-30 mx-auto stroke-primary" />,
   },
   {
-    title: 'Frontend',
-    description: 'With a personalised design in place, your website will be coded to the highest standard.',
-    icon: <LuCode className="w-14 h-14 lg:w-30 lg:h-30 text-center mx-auto stroke-primary/70" />,
+    title: 'Development',
+    description: 'Building robust, scalable, and maintainable frontend solutions with modern technologies.',
+    icon: <LuCode className="w-14 h-14 lg:w-30 lg:h-30 mx-auto stroke-primary" />,
   },
 ];
 
@@ -30,7 +30,7 @@ const CoreSkills = () => {
               <div className="bg-gray-200/50 md:bg-white rounded-full w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] mx-auto grid place-items-center">
                 <span className="">{item.icon}</span>
               </div>
-              <h3 className="text-2xl md:mb-6 lg:mb-4 pt-6 text-secondary">{item.title}</h3>
+              <h3 className="text-2xl md:mb-6 lg:mb-4 pt-6 text-primary">{item.title}</h3>
               <Typography variant="body1" className="px-6 lg:px-12 text-lg lg:text-2xl text-gray-500">
                 {item.description}
               </Typography>

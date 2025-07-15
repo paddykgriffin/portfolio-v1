@@ -26,8 +26,8 @@ function ScrollToTop() {
         },
       )}
     >
-      <Button onClick={handleClick} size={'icon'} className="bg-primary rounded-full shadow-md">
-        <Icon icon="fe:arrow-up" className="text-white" />
+      <Button onClick={handleClick} size={'icon'} className="bg-secondary rounded-full shadow-md">
+        <Icon icon="fe:arrow-up" className="text-primary" />
       </Button>
     </div>
   );

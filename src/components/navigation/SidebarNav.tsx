@@ -27,23 +27,23 @@ export default function SidebarNav() {
           <LuMenu className="h-8 w-8" />
         </Button>
       </SheetTrigger>
-      <SheetContent side={'right'} className={cn('w-screen p-0 sm:w-[450px] bg-primary ')}>
-        <SheetHeader className="bg-secondary px-6 py-6 border-b border-primary">
-          <SheetTitle className="text-white text-[35px]">Menu</SheetTitle>
+      <SheetContent side={'right'} className={cn('w-screen p-0 sm:w-[450px] bg-secondary ')}>
+        <SheetHeader className="bg-primary px-6 py-6 border-b border-primary">
+          <SheetTitle className="text-white text-3xl text-left pb-0 mb-0 relative -top-1 z-10">Menu</SheetTitle>
           <SheetDescription className="hidden">use links to navigate</SheetDescription>
         </SheetHeader>
-        <div className=" ">
+        <div className="">
           <nav>
             <ul>
               {primaryMenuLinks.map(item => (
-                <li key={item.label} className={cn('border-b border-secondary/50')}>
+                <li key={item.label} className={cn('border-b border-primary/50')}>
                   <div className="flex items-center">
                     <a
                       aria-current={window.location.pathname === item.href ? 'page' : undefined}
                       onClick={handleLinkClick}
                       href={item.href}
                       className={cn(
-                        `grow px-6 py-6 font-medium text-secondary transition-colors hover:bg-secondary hover:text-white aria-[current=page]:text-white text-xl global-transition`,
+                        `grow px-6 py-6 font-medium text-primary transition-colors hover:bg-primary hover:text-white aria-[current=page]:text-primary aria-[current=page]:hover:text-white text-xl global-transition`,
                       )}
                     >
                       {item.label}
@@ -53,14 +53,14 @@ export default function SidebarNav() {
               ))}
             </ul>
           </nav>
-          <div className="text-secondary px-6 py-6">
+          <div className="text-primary px-6 py-6">
             <ul className="o-list-bare">
               <li className="flex py-6">
                 <a
                   href="mailto:paddygriffin@gmail.com"
                   className="flex items-center font-medium hover:text-white global-transition"
                 >
-                  <LuMail className="mr-4 w-6 h-6 text-white/50" />
+                  <LuMail className="mr-4 w-6 h-6 text-primary" />
                   paddygriffin@gmail.com
                 </a>
               </li>
@@ -69,7 +69,7 @@ export default function SidebarNav() {
                   href="tel:00353879908117"
                   className="flex items-center font-medium hover:text-white global-transition"
                 >
-                  <LuPhone className="mr-4 w-6 h-6 text-white/50" />
+                  <LuPhone className="mr-4 w-6 h-6 text-primary" />
                   +353 87 9908117
                 </a>
               </li>

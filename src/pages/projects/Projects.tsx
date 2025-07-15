@@ -16,7 +16,7 @@ s to collabrative projects, industries include telecommunications, engineering, 
       <section>
         <Container className="text-center">
           <div className="pt-12 pb-12">
-            <Typography variant={'h1'} className="lg:text-6xl !font-medium text-[#666]">
+            <Typography variant={'h1'} className="lg:text-6xl !font-medium text-primary">
               Projects
             </Typography>
           </div>

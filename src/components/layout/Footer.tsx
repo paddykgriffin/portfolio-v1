@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="text-center mx-auto flex items-center justify-center [&>svg]:h-10">
             <Logo />
           </div>
-          <div className="py-4 text-secondary">
+          <div className="py-4 text-white">
             &copy; {year} Copyright - {siteConfig.siteName}
           </div>
           <div className="[&>div]:my-0 [&_a]:!w-8 [&_a]:!h-8 [&_a]:px-2">
