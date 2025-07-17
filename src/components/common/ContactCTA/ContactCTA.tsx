@@ -2,7 +2,7 @@ import { Container } from '@/components/layout/Container/Container';
 import { Typography } from '../Typography/Typography';
 import { LuMail, LuPhone } from 'react-icons/lu';
 
-interface ContactCTAProps {
+interface Props {
   title?: boolean | string;
   description?: boolean | string;
 }
@@ -22,7 +22,7 @@ const data = [
   },
 ];
 
-const ContactCTA = ({ title = true, description = true }: ContactCTAProps) => {
+const ContactCTA = ({ title = true, description = true }: Props) => {
   const defaultTitle = "Let's work together";
   const defaultDescription =
     "Have a project or idea you want to discuss? Feel free to reach out and let's make something great.";

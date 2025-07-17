@@ -44,7 +44,7 @@ function About() {
                 </Typography>
 
                 <Typography variant="body1" className="text-[#666] pb-4  xl:pr-60">
-                  I am currently employed as a Web Developer for a Accenture Ireland (S&PP Global Interactive Graphic
+                  I am currently employed as a Web Developer for Accenture Ireland (S&PP Global Interactive Graphic
                   Design). I work on a global development team buidling first class web applications for global clients.
                 </Typography>
 
